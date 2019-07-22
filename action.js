@@ -5,25 +5,34 @@
 
 // Mi preparo le variabili
 
-var stampa, num;
+var stampa, num, somma;
 
 stampa = document.getElementById('my');
-
+somma = 0;
 // Chiedo all'utente di inserire 5 volte un numero qualsiasi
 // Stampo la somma di tutti i numeri
 
 // Uso variablie for
 
-for (i = 0; i < 5; i++) {
-  num = parseInt(prompt("Inserisci un numero qualsiasi"));
-  console.log(num);
-  stampa.innerHTML = num;
-}
+// for (i = 0; i < 5; i++) {
+//   num = parseInt(prompt("Inserisci un numero qualsiasi"));
+//   console.log(num);
+//   somma = somma + num;
+// }
+//
+// console.log (somma);
+// stampa.innerHTML = somma;
+
 
 // Faccio la variabile while
 
-// while (i = 0; i < 5) {
-//   console.log(num);
-//   stampa.innerHTML = num;
-//   i++;
-// }
+var i = 0;
+while (i < 5) {
+  num = parseInt(prompt("Inserisci un numero qualsiasi"));
+  console.log(num);
+  somma = somma + num;
+  i++;
+}
+
+stampa.innerHTML = somma;
+console.log(somma);
